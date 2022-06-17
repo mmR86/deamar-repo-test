@@ -128,7 +128,7 @@ figure {
 }
 
 .open .navbar {
-  height: 160px;
+  height: 115px;
 }
 
 .open .sp-menu {
@@ -136,12 +136,13 @@ figure {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  transition: 0.4s;
 }
 
 .sp-menu {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 25px;
   left: 0;
   height: calc(100vh - 120px);
   width: 100%;
@@ -268,7 +269,7 @@ figure {
       rgba(159, 179, 190, 0.4),
       rgba(0, 0, 60, 0.8) 45%
     ),
-    url(/css/images/elektro-oprema.jpg);
+    url(css/images/elektro-oprema.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -277,7 +278,7 @@ figure {
 /* O NAMA BODY */
 
 .o-nama-body {
-  background-image: url(/css/images/o-nama-body.jpg);
+  background-image: url(css/images/o-nama-body.jpg);
   background-position: center;
   height: 100vh;
   background-size: cover;
