@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/animat.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Reference | DEA MAR</title>
+  </head>
+  <body onclick="toggleMobileMenu(this)">
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo">DEA MAR</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Naslovna</a></li>
+            <li><a href="reference.html">Reference</a></li>
+            <li><a href="o-nama.html">O Nama</a></li>
+          </ul>
+        </nav>
+        <!-- SP NAVBAR -->
+        <div id="hamburger-icon">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="sp-menu">
+            <li><a href="index.html">Naslovna</a></li>
+            <li><a href="reference.html">Reference</a></li>
+            <li><a href="o-nama.html">O Nama</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- BANNER REFERENCE -->
+    <header>
+      <div class="bcg-img-o-nama"></div>
+      <div class="header-text">
+        <h1>REFERENCE</h1>
+        <p class="head-p">
+          Pogledajte foto galeriju objekata na kojima smo ugradili naše
+          automatizirane sisteme.
+        </p>
+      </div>
+    </header>
+    <div class="bg-gradient">
+      <div class="container">
+        <div class="grid js-scroll">
+          <figure>
+            <img src="/css/images/elektro-oprema.jpg" alt="" />
+          </figure>
+          <figure>
+            <img src="/css/images/daljinski.jpg" alt="" />
+          </figure>
+          <figure><img src="/img/proizvodaci/Bft-Logo.png" alt="" /></figure>
+          <figure><img src="/img/proizvodaci/came-logo.png" alt="" /></figure>
+          <figure>
+            <img src="/img/proizvodaci/Hikvision-Logo.png" alt="" />
+          </figure>
+          <!--<figure><img src="/css/images/elektro-oprema.jpg" alt="" /></figure>
+          <figure><img src="/css/images/elektro-oprema.jpg" alt="" /></figure>
+          <figure><img src="/css/images/elektro-oprema.jpg" alt="" /></figure>
+          <figure><img src="/css/images/elektro-oprema.jpg" alt="" /></figure>
+          <figure><img src="/css/images/elektro-oprema.jpg" alt="" /></figure>
+          <figure><img src="/css/images/elektro-oprema.jpg" alt="" /></figure> -->
+        </div>
+      </div>
+    </div>
+    <div id="popup">
+      <img src="" id="selectedImg" />
+      <button type="button" class="arrow left-arrow" id="left">
+        <img src="/img/Arrow-Left.png" alt="left arrow" />
+      </button>
+      <button type="button" class="arrow right-arrow" id="right">
+        <img src="/img/Arrow-Right.png" alt="right arrow" />
+      </button>
+      <button type="button" id="btn-x"><p>X</p></button>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="container">
+        <p>DEA MAR | &copy 2022</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

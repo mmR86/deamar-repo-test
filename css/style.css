@@ -1,0 +1,518 @@
+/* COLORS */
+:root {
+  --primary-grey-color: rgb(159, 179, 190);
+  --primary-grey-l-color: rgb(160, 179, 194);
+  --secondary-color: rgb(37, 66, 132);
+  --secondary-d-color: rgb(0, 0, 60);
+}
+
+/* DEFAULTS */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Verdana", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h2 {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 200%;
+  text-shadow: 0.5px 0.5px var(--secondary-d-color);
+  padding-bottom: 20px;
+}
+
+h3 {
+  color: var(--secondary-color);
+  font-size: 150%;
+  padding-bottom: 15px;
+}
+
+p {
+  font-size: 120%;
+  text-align: center;
+  color: var(--secondary-d-color);
+}
+
+figure {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+  border: solid 3px #000;
+  cursor: pointer;
+}
+
+.arrow img {
+  width: 50px;
+}
+
+/*  NAVBAR */
+.navbar {
+  background-color: var(--secondary-d-color);
+  color: var(--primary-grey-color);
+  height: 70px;
+  transition: 0.4s;
+}
+
+.navbar .flex {
+  margin-top: 0;
+  justify-content: space-between;
+}
+
+.navbar ul:first-child {
+  display: flex;
+}
+
+.navbar a {
+  color: var(--primary-grey-color);
+  padding: 5px;
+  margin: 0 10px;
+  font-size: 115%;
+}
+
+.navbar a:link,
+.navbar a:visited {
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  border-bottom: 2px var(--secondary-color) solid;
+}
+
+/*  SP NAVBAR */
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+  background-color: var(--secondary-d-color);
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .navbar {
+  height: 160px;
+}
+
+.open .sp-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sp-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 120px);
+  width: 100%;
+}
+/* ---------------- NASLOVNA ---------------*/
+/* NASLOVNA HEADER */
+.bcg-img {
+  background-image: linear-gradient(
+      225deg,
+      rgba(159, 179, 190, 0.2),
+      rgba(0, 0, 60, 0.8) 55%
+    ),
+    url(images/daljinski.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  opacity: 92%;
+}
+
+.header-text h1 {
+  -webkit-animation: scale-in-hor-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-hor-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.header-text li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-text li p {
+  font-size: 90%;
+  line-height: 1.4;
+  margin-left: 10px;
+  color: var(--primary-grey-color);
+  -webkit-animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0.9s
+    both;
+  animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0.9s both;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 5.5px solid var(--primary-grey-l-color);
+  background-color: var(--secondary-color);
+  -webkit-animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0.9s
+    both;
+  animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0.9s both;
+}
+
+/* PROIZVOĐAČI */
+.proizvodaci {
+  background-color: var(--primary-grey-l-color);
+  padding: 30px 0;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card:hover {
+  animation: blink 0.5s linear;
+}
+
+/* KONTAKT */
+.kontakt {
+  padding: 30px 0;
+}
+
+.podaci {
+  padding: 10px;
+  letter-spacing: 0.8;
+}
+
+.podaci span {
+  font-weight: 600;
+}
+
+.nazovi {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding: 10px;
+  width: 250px;
+}
+
+.nazovi img {
+  animation: float 3s infinite linear;
+}
+
+.kontakt .flex-col {
+  gap: 20px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--secondary-d-color);
+  height: 100px;
+  color: var(--primary-grey-l-color);
+  font-size: 120%;
+  font-weight: 600;
+  text-align: center;
+  /* padding: 50px; */
+}
+
+.footer p {
+  color: var(--primary-grey-color);
+  padding-top: 35px;
+  font-size: 100%;
+}
+
+/* ---------------- O NAMA ---------------*/
+/* O NAMA HEADER */
+.bcg-img-o-nama {
+  background-image: linear-gradient(
+      225deg,
+      rgba(159, 179, 190, 0.4),
+      rgba(0, 0, 60, 0.8) 45%
+    ),
+    url(/css/images/elektro-oprema.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* O NAMA BODY */
+
+.o-nama-body {
+  background-image: url(/css/images/o-nama-body.jpg);
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+  opacity: 30%;
+  filter: blur(6px);
+}
+
+.o-nama-copy {
+  position: absolute;
+  top: 125%;
+  left: 25%;
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.o-nama-copy p {
+  padding-bottom: 30px;
+  color: #fff;
+  text-shadow: 0.5px 0.5px var(--secondary-d-color);
+}
+
+/* ---------------- REFERENCE ---------------*/
+.grid img {
+  width: 100%;
+  transform: scale(1.15);
+  opacity: 0.6;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.arrow {
+  position: fixed;
+  background-color: var(--primary-grey-color);
+  padding: 12px;
+  border-radius: 20px;
+  border: 3px solid var(--primary-grey-color);
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  box-shadow: 0 5px #999;
+}
+
+.arrow:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(-45%);
+  transition: 300ms ease;
+}
+
+.left-arrow {
+  left: calc(15vw - 35px);
+  z-index: 999;
+}
+
+.right-arrow {
+  right: calc(15vw - 35px);
+  z-index: 999;
+}
+
+/* -------------------------------------------*/
+/* -------------- MEDIA QUERIES -------------*/
+/* -----------------------------------------*/
+@media (max-width: 1900px) {
+  .o-nama-copy {
+    left: 20%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .o-nama-copy {
+    left: 15%;
+  }
+
+  .head-p {
+    padding-right: 20%;
+  }
+
+  .header-text {
+    font-size: 220%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .o-nama-copy {
+    left: 10%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .o-nama-copy {
+    left: 7%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header-text {
+    font-size: 170%;
+  }
+
+  .head-p {
+    font-size: 60%;
+  }
+
+  .o-nama-copy {
+    left: 3%;
+  }
+
+  .o-nama-copy p {
+    padding-bottom: 30px;
+    font-size: 130%;
+  }
+}
+
+@media (max-width: 990px) {
+  p {
+    font-size: 100%;
+  }
+  .container {
+    max-width: 760px;
+  }
+  .header-text {
+    font-size: 190%;
+  }
+  .head-p {
+    font-size: 60%;
+  }
+  .o-nama-copy {
+    left: 10%;
+    max-width: 760px;
+  }
+  .o-nama-copy p {
+    font-size: 130%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .o-nama-copy {
+    left: 6%;
+  }
+
+  .o-nama-copy p {
+    font-size: 90%;
+    padding-bottom: 15px;
+  }
+
+  .header-text {
+    font-size: 150%;
+  }
+}
+
+@media (max-width: 780px) {
+  .header-text {
+    font-size: 150%;
+  }
+
+  .kontakt p {
+    padding: 0 10px;
+  }
+
+  .o-nama-copy {
+    left: 1%;
+  }
+
+  .o-nama-copy p {
+    font-size: 90%;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 680px) {
+  nav {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  .header-text {
+    font-size: 130%;
+  }
+
+  .o-nama-copy p {
+    font-size: 85%;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 550px) and (orientation: landscape) {
+  .header-text {
+    font-size: 120%;
+  }
+
+  ul li {
+    padding-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+
+  .o-nama-copy p {
+    font-size: 85%;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header-text {
+    font-size: 120%;
+    left: 17%;
+  }
+
+  ul li {
+    padding-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 130%;
+  }
+
+  .o-nama-copy p {
+    font-size: 80%;
+    padding-bottom: 20px;
+  }
+}
