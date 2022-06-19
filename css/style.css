@@ -414,7 +414,8 @@ figure {
     max-width: 760px;
   }
   .o-nama-copy p {
-    font-size: 130%;
+    font-size: 90%;
+    padding-bottom: 15px;
   }
 
   .grid {
