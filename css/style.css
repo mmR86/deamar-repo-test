@@ -426,6 +426,7 @@ figure {
 @media (max-width: 900px) {
   .o-nama-copy {
     left: 6%;
+    top: 150%;
   }
 
   .o-nama-copy p {
