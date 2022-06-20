@@ -88,6 +88,6 @@ btnX.addEventListener("click", () => {
 
 // SP MENU on 680px
 
-function toggleMobileMenu(menu) {
-  menu.classList.toggle("open");
+function toggleMobileMenu() {
+  document.getElementById("the-one").classList.toggle("open");
 }
