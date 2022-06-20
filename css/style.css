@@ -6,6 +6,12 @@
   --secondary-d-color: rgb(0, 0, 60);
 }
 
+html {
+  /* iPhone landscape fix */
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
 /* DEFAULTS */
 * {
   box-sizing: border-box;
