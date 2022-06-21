@@ -459,7 +459,7 @@ figure {
   }
 
   .o-nama-copy p {
-    font-size: 90%;
+    font-size: 120%;
     padding-bottom: 15px;
   }
 }
@@ -475,10 +475,6 @@ figure {
 
   #hamburger-icon {
     display: block;
-  }
-
-  .header-text {
-    font-size: 130%;
   }
 
   .o-nama-copy p {
@@ -508,7 +504,7 @@ figure {
 
 @media (max-width: 450px) {
   .header-text {
-    font-size: 120%;
+    font-size: 140%;
     left: 17%;
   }
 
