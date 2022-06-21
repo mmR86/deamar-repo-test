@@ -456,6 +456,7 @@ figure {
 
   .o-nama-copy {
     left: 1%;
+    top: 112%;
   }
 
   .o-nama-copy p {
@@ -516,8 +517,12 @@ figure {
     font-size: 130%;
   }
 
+  .o-nama-copy {
+    top: 100%;
+  }
+
   .o-nama-copy p {
-    font-size: 80%;
+    font-size: 85%;
     padding-bottom: 20px;
   }
 }
