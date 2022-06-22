@@ -457,7 +457,7 @@ figure {
 
   .o-nama-copy {
     left: 1%;
-    top: 112%;
+    top: 122%;
   }
 
   .o-nama-copy p {
@@ -467,10 +467,6 @@ figure {
 }
 
 @media (max-width: 680px) {
-  .o-nama-copy {
-    top: 120%;
-  }
-
   .o-nama-copy p {
     font-size: 85%;
     padding-bottom: 10px;
