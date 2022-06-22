@@ -432,7 +432,7 @@ figure {
 
 @media (max-width: 900px) {
   .o-nama-copy {
-    left: 3%;
+    left: 2%;
     top: 150%;
   }
 
@@ -467,6 +467,10 @@ figure {
 }
 
 @media (max-width: 680px) {
+  .o-nama-copy {
+    top: 120%;
+  }
+
   .o-nama-copy p {
     font-size: 85%;
     padding-bottom: 10px;
@@ -540,7 +544,7 @@ figure {
   }
 
   .o-nama-copy {
-    top: 130%;
+    top: 129%;
   }
 
   .o-nama-copy p {
