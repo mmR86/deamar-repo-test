@@ -10,6 +10,7 @@ html {
   /* iPhone landscape fix */
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
+  overflow-x: hidden;
 }
 
 /* DEFAULTS */
@@ -466,10 +467,13 @@ figure {
 }
 
 @media (max-width: 680px) {
-  nav {
-    display: none;
+  .o-nama-copy p {
+    font-size: 85%;
+    padding-bottom: 10px;
   }
+}
 
+@media (max-width: 620px) {
   .logo {
     display: none;
   }
@@ -478,15 +482,14 @@ figure {
     display: block;
   }
 
-  .o-nama-copy p {
-    font-size: 85%;
-    padding-bottom: 10px;
+  nav {
+    display: none;
   }
 }
 
-@media (max-width: 550px) and (orientation: landscape) {
+@media (max-width: 550px) {
   .header-text {
-    font-size: 120%;
+    font-size: 140%;
   }
 
   ul li {
@@ -505,8 +508,11 @@ figure {
 
 @media (max-width: 450px) {
   .header-text {
-    font-size: 140%;
     left: 17%;
+  }
+
+  .head-p {
+    font-size: 70%;
   }
 
   ul li {
@@ -518,11 +524,23 @@ figure {
   }
 
   .o-nama-copy {
-    top: 100%;
+    top: 115%;
   }
 
   .o-nama-copy p {
     font-size: 85%;
     padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 365px) {
+  .header-text {
+    font-size: 125%;
+    left: 14%;
+  }
+
+  .o-nama-copy p {
+    font-size: 80%;
+    padding-bottom: 15px;
   }
 }
